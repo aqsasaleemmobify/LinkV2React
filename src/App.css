@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .App {
   text-align: center;
 }
 
+body {
+  font-family: Inter;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +39,496 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* Navbar Wrapper */
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Container */
+.navbar-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+/* .logo {
+  display: flex;
+  align-items: center;
+} */
+
+/* Desktop Navigation */
+.nav-links {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+.nav-link {
+  color: #4b5563;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #2563eb;
+}
+
+.nav-button {
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.nav-button:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+/* Mobile Menu */
+.burger-button {
+  display: block;
+  background: none;
+  border: none;
+  color: #4b5563;
+}
+
+.burger-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .burger-button {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: block;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.mobile-link {
+  display: block;
+  color: #4b5563;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.mobile-link:hover {
+  color: #2563eb;
+}
+
+.mobile-button {
+  display: block;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.mobile-button:hover {
+  background-color: #2563eb;
+  color: white;
+}
+/* Hero Section */
+.hero-section {
+  padding: 90px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-image {
+  margin-top: 30px;
+  border-radius: 12px;
+  display: block; /* Center the image */
+}
+
+/* How It Works Section */
+.how-it-works {
+  background-color: #f7fafc; /* Equivalent to bg-gray-50 */
+  padding: 90px 20px;
+  text-align: center; /* Center the text */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.steps-grid {
+  justify-content: center; /* Center the grid items */
+}
+
+.step-card {
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the content inside each card */
+}
+
+/* Security Section */
+.security-section {
+  padding: 90px 20px;
+  text-align: center; /* Center the text */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.security-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: center; /* Center the text inside the flex container */
+}
+
+.security-description {
+  max-width: 500px;
+  color: #4a5568; /* Equivalent to text-gray-600 */
+  text-align: center; /* Ensure text is centered */
+}
+
+/* Pricing Section */
+.pricing-section {
+  background: linear-gradient(
+    90deg,
+    #e2e8f0,
+    #bee3f8
+  ); /* Equivalent to bg-gradient-to-r from-cyan-200 to-blue-100 */
+  padding: 90px 20px;
+  text-align: center; /* Center the text */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pricing-card {
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Center the content inside each pricing card */
+}
+
+/* Why Developers Choose Link2VA Section */
+.why-choose-section {
+  background: linear-gradient(
+    135deg,
+    #f7fafc,
+    #e2e8f0
+  ); /* Equivalent to bg-gradient-to-br from-gray-50 to-cyan-50 */
+  padding: 90px 20px;
+  text-align: center; /* Center the text */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.choice-card {
+  padding: 24px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center; /* Center the content inside each choice card */
+}
+.submit-module-button {
+  max-width: 300px !important;
+  margin: 0 auto !important;
+}
+.view-plans-button {
+  max-width: 300px !important;
+  margin: 0 auto !important;
+}
+.register-button {
+  max-width: 300px !important;
+  margin: 0 auto !important;
+}
+ul {
+  text-align: left;
+  font-family: Inter;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+.css-1u8xl8z-MuiGrid-root {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.learn-more-button {
+  max-width: 300px !important;
+  margin: 0 auto !important;
+}
+/* about */
+.about-page {
+  font-family: "Roboto", sans-serif;
+}
+
+.section {
+  padding: 50px 24px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.flex-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper img,
+.image-half img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.text-half {
+  min-width: 280px;
+}
+
+.image-half {
+  flex: 1;
+  min-width: 280px;
+  max-width: 649px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin: 0;
+}
+.trust-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.trust-footer {
+  margin-top: 30px;
+}
+.paragraph {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 720px;
+  margin: 0 auto 16px auto;
+}
+
+.highlight {
+  color: #1e40af;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.icon-grid {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+.icon-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.icon {
+  color: #2563eb;
+}
+.icon-grid-items-icons {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.italic {
+  margin-top: 50px;
+  font-size: 16px;
+}
+.icon-large {
+  font-size: 48px;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+.list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.success {
+  color: #15803d;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1315px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.card {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+}
+.section.section.light-bg.center-text {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin: 40px 0;
+  margin: 0 auto;
+  max-width: 1315px;
+}
+
+/* .primary-button {
+  background-color: #1e3a8a !important;
+} */
+
+.gradient-bg {
+  background: linear-gradient(to bottom right, #f0f9ff, #ffffff);
+}
+
+.light-bg {
+  background-color: #f1f5f9;
+}
+img.rounded.shadow {
+  width: 50%;
+}
+.title-linkv2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+.title-built {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+}
+/* footer */
+.footer-root {
+  background-color: #1f2937; /* Equivalent to Tailwind's bg-gray-800 */
+  color: #d1d5db; /* Equivalent to text-gray-300 */
+  padding: 32px 16px;
+  text-align: center;
+}
+
+.footer-links {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.footer-link-item {
+  text-align: center;
+}
+
+.footer-link {
+  cursor: pointer;
+  color: #d1d5db;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #2563eb; /* Equivalent to Tailwind's text-blue-600 */
+}
+
+.footer-bottom-text p{
+  color: #9ca3af; /* Equivalent to Tailwind's text-gray-500 */
+  margin-top: 24px;
+}
+/* DeveloperSubmission */
+.submission-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.required-star {
+  color: red;
+}
+
+.upload-box {
+  border: 2px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.file-name {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.submit-button {
+  background-color: #1d4ed8;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #1e40af;
+}
+
+.notice-box {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+
+.emoji {
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.emoji.success {
+  color: green;
+}
+.MuiGrid-root.MuiGrid-direction-xs-row.css-17fpwt7-MuiGrid-root {
+  width: 30%;
 }
