@@ -77,7 +77,7 @@ const About = () => {
             MorphicBrain handles the complexity. <br />
             <span className="highlight">You just build great agents.</span>
           </p>
-          <Button variant="contained" color="primary-button">
+          <Button variant="contained" color="primary">
             → See How It Works
           </Button>
         </section>
