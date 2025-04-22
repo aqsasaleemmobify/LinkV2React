@@ -478,9 +478,9 @@ ul li {
   max-width: 1315px;
 }
 
-/* .primary-button {
+.primary-button {
   background-color: #1e3a8a !important;
-} */
+}
 
 .gradient-bg {
   background: linear-gradient(to bottom right, #f0f9ff, #ffffff);
