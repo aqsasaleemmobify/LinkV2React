@@ -150,6 +150,56 @@ body {
   background-color: #2563eb;
   color: white;
 }
+/* home */
+.hero-title, .section-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #1e41af;
+}
+
+.hero-description, .step-description, .security-description, .choice-text {
+  text-align: center;
+  color: #444;
+  margin: 10px 0;
+}
+
+.hero-section, .how-it-works, .security-section, .pricing-section, .why-choose-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.steps-grid, .choices-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+.step-card, .choice-card, .pricing-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1e41af;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #173a99;
+}
+
 /* Hero Section */
 .hero-section {
   padding: 90px 20px;
@@ -233,6 +283,8 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center; /* Center the content inside each pricing card */
+  max-width: 383px;
+    margin: 0 auto;
 }
 
 /* Why Developers Choose Link2VA Section */
@@ -478,7 +530,7 @@ img.rounded.shadow {
   color: #2563eb; /* Equivalent to Tailwind's text-blue-600 */
 }
 
-.footer-bottom-text p{
+.footer-bottom-text p {
   color: #9ca3af; /* Equivalent to Tailwind's text-gray-500 */
   margin-top: 24px;
 }
@@ -531,4 +583,8 @@ img.rounded.shadow {
 }
 .MuiGrid-root.MuiGrid-direction-xs-row.css-17fpwt7-MuiGrid-root {
   width: 30%;
+}
+.MuiPaper-root .MuiPaper-elevation .MuiPaper-rounded .MuiPaper-elevation1 .choice-card .css-1gtchvp-MuiPaper-root{
+  max-width: 946px;
+    margin: 0 auto;
 }
