@@ -27,7 +27,7 @@ const Navbar = () => {
           <Link to="/developerSubmission" className="nav-link">
             Developers
           </Link>
-          <Link to="/login" className="nav-button">
+          <Link to="#" className="nav-button">
             🔒 Login
           </Link>
         </nav>
@@ -64,7 +64,7 @@ const Navbar = () => {
           >
             Developers
           </Link>
-          <Link to="/login" className="mobile-button" onClick={toggleMenu}>
+          <Link to="#" className="mobile-button" onClick={toggleMenu}>
             🔒 Login
           </Link>
         </div>
